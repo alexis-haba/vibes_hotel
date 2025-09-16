@@ -19,7 +19,13 @@ const PORT = process.env.PORT || 5000;
 
 // Security middlewares
 app.use(helmet());
-app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:8081'] })); // Web et mobile
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:8081',
+    'https://vibes-hotel-web.onrender.com' // ton site déployé
+  ]
+}));
 app.use(xss());
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 1000 }));
 // Body parser
