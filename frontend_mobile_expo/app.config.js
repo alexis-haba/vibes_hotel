@@ -4,7 +4,7 @@ export default {
     slug: "thevibesmobile",
     version: "1.0.0",
     orientation: "portrait",
-    scheme: "thevibesmobile", // Ajoute cette ligne
+    scheme: "thevibesmobile",
     icon: "./assets/images/icon.png",
     userInterfaceStyle: "light",
     splash: {
@@ -18,17 +18,19 @@ export default {
     assetBundlePatterns: ["**/*"],
     ios: {
       supportsTablet: true,
+      bundleIdentifier: "com.cah120.thevibes"
     },
     android: {
       adaptiveIcon: {
         foregroundImage: "./assets/images/adaptive-icon.png",
         backgroundColor: "#FFFFFF",
       },
+      package: "com.cah120.thevibes"
     },
     extra: {
       eas: {
-        projectId: "your-project-id-here",
-      },
+        projectId: "7b3b741d-39df-4dca-bfaa-a0f211129dd9" // ID fourni par EAS
+      }
     },
     plugins: [
       [
