@@ -7,7 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "frontendmobileexpo",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.cah120.thevibes"
@@ -38,7 +38,9 @@
       ]
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "turboModules": false,
+      "bridgeless": false
     }
-  }
+      }
 }

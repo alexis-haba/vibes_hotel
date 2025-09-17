@@ -20,10 +20,11 @@ export default {
       supportsTablet: true,
       bundleIdentifier: "com.cah120.thevibes"
     },
+    icon: "./assets/images/icon.png",
     android: {
       adaptiveIcon: {
         foregroundImage: "./assets/images/adaptive-icon.png",
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "#FFFFFF"
       },
       package: "com.cah120.thevibes"
     },
