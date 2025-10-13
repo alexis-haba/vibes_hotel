@@ -300,12 +300,12 @@ const Dashboard = () => {
 
       {/* Actions */}
       <div className="d-flex gap-3 mt-4 flex-wrap">
-        <button onClick={printDailyReport} className="btn btn-outline-dark"><FaPrint /> Imprimer</button>
+        {/* <button onClick={printDailyReport} className="btn btn-outline-dark"><FaPrint /> Imprimer</button> */}
         <button onClick={exportDailyPDF} className="btn btn-outline-primary"><FaFilePdf /> PDF Journalier</button>
         <button onClick={exportWeeklyPDF} className="btn btn-outline-info"><FaFilePdf /> PDF Hebdomadaire</button>
         <button onClick={exportMonthlyPDF} className="btn btn-outline-warning"><FaFilePdf /> PDF Mensuel</button>
         <button onClick={exportAnnualPDF} className="btn btn-outline-success"><FaFilePdf /> PDF Annuel</button>
-        <button onClick={exportExcel} className="btn btn-outline-success"><FaFileExcel /> Exporter Excel</button>
+        {/* <button onClick={exportExcel} className="btn btn-outline-success"><FaFileExcel /> Exporter Excel</button> */}
       </div>
 
       {/* Graphiques */}
